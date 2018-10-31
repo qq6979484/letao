@@ -39,6 +39,7 @@ ul {
   left: 0;
   top: 0;
   background-color: #222D32;
+  z-index: 999;
 }
 
 .lt_aside  .brand{
@@ -46,6 +47,7 @@ ul {
   width: 180px;
   height: 50px;
   background-color: #367FA9;
+ 
   
 }
 .lt_aside  .brand a{
@@ -96,3 +98,33 @@ ul {
   display: none;
 }
 
+
+
+.lt_main {
+  padding-left: 180px;
+  padding-top: 50px;
+  height: 1000px;
+  background-color: pink;
+}
+
+.lt_main  .lt_topbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #3C8DBC;
+  padding-left: 180px;
+}
+.lt_topbar .icon_menu,
+.lt_topbar .icon_logout{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+.lt_content {
+  padding: 15px;
+}
