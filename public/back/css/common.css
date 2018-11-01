@@ -14,7 +14,9 @@ ul {
   padding: 0;
   list-style: none;
 }
-
+.red{
+   color: red;
+}
 
 
 
@@ -40,6 +42,10 @@ ul {
   top: 0;
   background-color: #222D32;
   z-index: 999;
+  transition: all 1s;
+}
+.lt_aside.hidemenu{
+  left: -180px;
 }
 
 .lt_aside  .brand{
@@ -93,9 +99,12 @@ ul {
 .lt_aside .nav  a i {
      margin-right: 5px;
 }
+.lt_aside .nav .child {
+
+  display: none;
+}
 .lt_aside .nav .child a {
   padding-left: 60px;
-  display: none;
 }
 
 
@@ -115,6 +124,7 @@ ul {
   height: 50px;
   background-color: #3C8DBC;
   padding-left: 180px;
+  z-index: 666;
 }
 .lt_topbar .icon_menu,
 .lt_topbar .icon_logout{
@@ -127,4 +137,14 @@ ul {
 }
 .lt_content {
   padding: 15px;
+}
+
+
+/* 需要准备两个具备宽高的容器 */
+
+.lt_content .content_left,
+.lt_content .content_right{
+      width: 48%;
+      height: 400px;
+      background-color: green;
 }
